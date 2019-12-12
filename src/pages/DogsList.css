@@ -1,7 +1,17 @@
-*{
-  /* height: 100vh; */
+.dog img{
+  width: 55%;
+  border-radius: 50%;
+  filter: grayscale();
+
+}
+.dog:hover img{
+  filter: none;
 }
 
-.dog img{
-  width: 75%;
+.dog-details-link{
+font-size: 21px;
+color:#2e279d;
 }
+.dog-details-link:hover{
+  text-decoration: none;
+  }
