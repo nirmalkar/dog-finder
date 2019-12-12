@@ -17,3 +17,6 @@ letter-spacing: .2rem;
 .dog-details-link:hover{
   text-decoration: none;
   }
+.dog-list-background{
+  height: 100vh;
+}
