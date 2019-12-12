@@ -6,7 +6,7 @@ export class DogList extends Component {
   render() {
     return (
       <div className='dog-list-background'>
-        <div className='display-3'>Dogs List</div>
+        <div className='display-3'>Dogs List!</div>
         <div className="dog-list mt-5">
           <div className="container">
             <div className="row no-gutters">
