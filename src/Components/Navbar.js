@@ -6,12 +6,12 @@ export class Navbar extends Component {
   render() {
     const dogLinks = this.props.dogs.map(dog => (
 
-      <NavLink to={`/dogs/${dog.name}`} className='nav-link' key={dog.name}>{dog.name}</NavLink>
+      <NavLink exact to={`/dogs/${dog.name}`} className='nav-link' key={dog.name}>{dog.name}</NavLink>
     ))
     return (
       <div>
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-          <NavLink to='/' className="navbar-brand">Dog App</NavLink>
+          <NavLink exact to='/' className="navbar-brand">Dog App</NavLink>
           <button className="navbar-toggler"
             type="button"
             data-toggle="collapse"
@@ -23,8 +23,8 @@ export class Navbar extends Component {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mr-auto">
-              <li className="nav-item active">
-                <NavLink to='/dogs' className="nav-link">Home</NavLink>
+              <li className="nav-item">
+                <NavLink exact to='/dogs' className="nav-link">Home</NavLink>
               </li>
               {dogLinks}
             </ul>

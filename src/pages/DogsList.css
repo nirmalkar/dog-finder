@@ -1,3 +1,7 @@
+*{
+  /* height: 100vh; */
+}
+
 .dog img{
   width: 75%;
 }
