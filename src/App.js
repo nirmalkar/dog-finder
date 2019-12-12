@@ -54,7 +54,7 @@ class App extends Component {
     }
     return (
       <div className="App" >
-        <Navbar />
+        <Navbar dogs={this.props.dogs} />
         <Switch>
           <Route exact path='/dogs' render={() => <DogList dogs={this.props.dogs} />} />
           <Route exact path='/dogs/:name' render={getDog} />

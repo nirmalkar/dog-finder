@@ -7,10 +7,10 @@ export default class DogDetails extends Component {
     let dog = this.props.dog
     return (
       <div className='container'>
-        <div className="row justify-content-center">
+        <div className="row justify-content-center my-5">
           <div className="col-11 col-lg-5">
             <div className="card dog-details-card">
-              <img src={dog.src} alt="" />
+              <img className='card-img-top img-fluid' src={dog.src} alt="" />
               <div className="card-body">
                 <div className="card-title">
                   {dog.name}
