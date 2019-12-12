@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './DogsList.css'
-export class DogsList extends Component {
+export class DogList extends Component {
 
   render() {
     return (
@@ -9,7 +9,7 @@ export class DogsList extends Component {
           <div className="container">
             <div className="row no-gutters">
               {this.props.dogs.map(d => (
-                <div className="dog col-4 text-center">
+                <div className="dog col-lg-4 text-center">
                   <div key={d.name}>
                     <img src={d.src} alt={d.name} />
                     <h1>{d.name}</h1>
@@ -24,4 +24,4 @@ export class DogsList extends Component {
   }
 }
 
-export default DogsList
+export default DogList
