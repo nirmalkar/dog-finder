@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import './DogDetails.css'
 
 export default class DogDetails extends Component {
@@ -6,7 +7,7 @@ export default class DogDetails extends Component {
     let dog = this.props.dog
     return (
       <div className='container'>
-        <div className="row">
+        <div className="row justify-content-center">
           <div className="col-11 col-lg-5">
             <div className="card dog-details-card">
               <img src={dog.src} alt="" />
@@ -23,6 +24,9 @@ export default class DogDetails extends Component {
                   <li className='list-group-item' key={i}>{fact}</li>
                 ))}
               </ul>
+              <div className="card-body">
+                <Link exact to='/'>Go Back</Link>
+              </div>
             </div>
           </div>
         </div>
