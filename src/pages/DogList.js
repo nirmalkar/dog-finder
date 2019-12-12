@@ -13,7 +13,7 @@ export class DogList extends Component {
               {this.props.dogs.map(d => (
                 <div className="dog col-lg-4">
                   <div key={d.name}>
-                    <img className='shadow' src={d.src} alt={d.name} /><br />
+                    <img className='shadow mb-3' src={d.src} alt={d.name} /><br />
                     <Link className='dog-details-link' exact to={`/dogs/${d.name}`}>{d.name}</Link>
                   </div>
                 </div>
