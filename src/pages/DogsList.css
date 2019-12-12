@@ -6,11 +6,13 @@
 }
 .dog:hover img{
   filter: none;
+transform: scale(1.09);
 }
 
 .dog-details-link{
 font-size: 21px;
 color:#2e279d;
+letter-spacing: .2rem;
 }
 .dog-details-link:hover{
   text-decoration: none;
